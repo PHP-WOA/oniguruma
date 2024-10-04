@@ -7,7 +7,7 @@ SAMPLE_DIR = $(ONIG_DIR)/../sample
 WIN_DIR    = $(ONIG_DIR)/../windows
 
 CPPFLAGS =
-CFLAGS = -O2 -nologo /W3
+CFLAGS = -MT -O2 -nologo /W3
 LDFLAGS =
 LOADLIBES =
 ARLIB = lib
@@ -26,7 +26,7 @@ DEFS = -DHAVE_CONFIG_H -DUSE_POSIX_API -DUSE_BINARY_COMPATIBLE_POSIX_API
 subdirs =
 
 libbase   = onig
-libname   = $(libbase)_s.lib
+libname   = $(libbase)_a.lib
 dllname   = $(libbase).dll
 dlllib    = $(libbase).lib
 
